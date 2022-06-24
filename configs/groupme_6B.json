@@ -25,10 +25,6 @@
   "model_dir": "groupme_6B_finetune",
 
   "train_set": "groupme.train.index",
-//   "val_set": {
-//     "pile": "pile.val.index",
-//     "owt": "openwebtext2_new_inputs.val.index"
-//   },
 
   "eval_harness_tasks": []
 
