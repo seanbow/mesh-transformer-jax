@@ -25,6 +25,7 @@
   "model_dir": "groupme_6B_finetune",
 
   "train_set": "groupme.train.index",
+  "val_set": {},
 
   "eval_harness_tasks": [],
 
