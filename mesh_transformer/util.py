@@ -51,7 +51,7 @@ def clip_by_global_norm(max_norm, use_psum=True) -> GradientTransformation:
     """
 
     def init_fn(_):
-        return OptState()
+        return []
 
     def update_fn(updates, state, params=None):
         del params
