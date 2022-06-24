@@ -33,8 +33,8 @@ def global_norm(updates, use_psum=True):
     return jnp.sqrt(pre_sqrt)
 
 
-class ClipByGlobalNormState(OptState):
-    """The `clip_by_global_norm` transformation is stateless."""
+# class ClipByGlobalNormState(OptState):
+#     """The `clip_by_global_norm` transformation is stateless."""
 
 
 def clip_by_global_norm(max_norm, use_psum=True) -> GradientTransformation:
@@ -51,7 +51,7 @@ def clip_by_global_norm(max_norm, use_psum=True) -> GradientTransformation:
     """
 
     def init_fn(_):
-        return ClipByGlobalNormState()
+        return OptState()
 
     def update_fn(updates, state, params=None):
         del params
