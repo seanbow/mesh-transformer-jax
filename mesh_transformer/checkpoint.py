@@ -172,7 +172,7 @@ def read_ckpt(pytree, dir, shards_in, shards_out=None, load_opt=True):
 
     if not load_opt:
         loaded_pytree['opt_state'] = original_opt_state
-    return loaded_pytree
+    return list(loaded_pytree)
 
 
 def read_ckpt_lowmem(pytree, dir, shards_in, shards_out=None, load_opt=True):
