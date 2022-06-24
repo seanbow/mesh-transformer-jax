@@ -26,7 +26,7 @@
 
   "train_set": "groupme.train.index",
 
-  "eval_harness_tasks": []
+  "eval_harness_tasks": [],
 
   "val_batches": 100,
   "val_every": 50000000000,
